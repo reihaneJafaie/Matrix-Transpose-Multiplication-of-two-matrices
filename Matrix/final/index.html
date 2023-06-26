@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+   <title>Matrix</title>
+</head>
+<body>
+
+   <!--navbar-->
+   <nav class="navbar navbar-light ">
+      <div class="container-fluid mx-3">
+         <span class="fs-4 text-warning">
+            𝒞𝑜𝒹𝑒 𝒞𝑜𝓋𝑒𝓃 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-magic" viewBox="0 0 16 16">
+               <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z"/>
+               </svg>
+            </span>
+        <button class=" navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarRight" aria-controls="navbarRight" aria-expanded="false" aria-label="Toggle Navigation">
+         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="text-warning bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+        <div class=" n2 offcanvas offcanvas-end" tabindex="-1" id="navbarRight" aria-labelledby="navbarRightLabel">
+            <div class="offcanvas-header d-flex flex-column">
+                  <h2 class="h2 offcanvas-title" id="navbar">𝒞𝑜𝒹𝑒 𝒞𝑜𝓋𝑒𝓃 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-magic" viewBox="0 0 16 16">
+                     <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z"/>
+                     </svg>
+                  </h2>
+                  <hr>
+                  <button class="mb-3 btn btn-outline-dark w-75 p-3" data-bs-toggle="collapse" data-bs-target="#demo">University projects</button>
+                  <div id="demo" class="w-75 collapse p-3">
+                     <a class=" text-dark fs-5 text-decoration-none" href="../html/matrix.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                        </svg>
+                     Matrix
+                     </a>
+                  </div> 
+
+                  <button class="mb-3 btn btn-outline-dark w-75 p-3" data-bs-toggle="collapse" data-bs-target="#demo1">About Me</button>
+                  <div id="demo1" class="lh-base w-75 collapse p-3">
+                     Hi, im Reihane Jafaie , I love programming and designing . so I learning website development. and I am a bachelor's student in the field of computer engineerin
+                  </div> 
+
+                  <button class="mb-3 btn btn-outline-dark w-75 p-3" data-bs-toggle="collapse" data-bs-target="#demo2">code coven</button>
+                  <div id="demo2" class="lh-base w-75 collapse p-3">
+                    code coven mean :<br>
+                    CodeCoven: This site name suggests a community of computer engineering students who come together to share their knowledge and skills in coding. The word "coven" refers to a group of witches, which adds a mystical and mysterious element to the name. The site could be a place where students can collaborate on projects, share resources, and support each other in their studies.
+                  </div> 
+
+
+                  <div class="  mt-3">
+                     <a class="text-decoration-none" href="https://github.com/reihaneJafaie " target="_blank" id="github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="text-dark mx-3 bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                     </a>
+   
+                     <a class="text-decoration-none" href="#" id="lang">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" target="_blank" class="text-dark mx-3 bi bi-translate" viewBox="0 0 16 16">
+                           <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                           <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                        </svg>
+                     </a>
+   
+                     <a class="text-decoration-none" onclick="shareHandler()" href="#" id="share">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" target="_blank" class="text-dark mx-3 bi bi-share" viewBox="0 0 16 16">
+                           <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                        </svg>
+                     </a>
+                     
+                  </div>
+               </div>
+            </div>
+        </div>
+      </div>
+   </nav>
+   
+   <section class=" d-flex flex-column align-items-center ">
+      <!--banner-->
+      <article  class=" banner1 container-fluid">
+         <div class="banner d-flex container mb-5 align-items-end">
+            <div class="mb-5 pb-5">
+               <h1 class="h1   fst-italic">Showcasing Innovative Student Projects in Computer Engineering</h1>
+            </div>
+            
+            <div class="w-100 d-flex d-none d-md-block" >
+              <!-- <img class=" w-100 " src="../img/akson-1K8pIbIrhkQ-unsplash.jpg" alt="students">-->
+            </div>
+         </div>
+      </article>
+
+      <!-- cards -->
+      <div class="mt-5 container-fluid text-warning" id="cards">
+      <div class="container text-center">
+          <div class="row">
+              <div class="col-lg-4 col-md-12">
+                  <div class="card-item">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cloud-download-fill" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0zm-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+                         </svg>
+                      </div>
+                      <h4 class="h4 mt-3">Download capability</h4>
+                      <p class="lh-lg fs-6 mt-3 text-secondary">
+                        All the codes used in this site, even the projects, can be downloaded from the GitHub link
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                  <div class="card-item">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                           <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+                         </svg>
+                      </div>
+                      <h4 class="h4 mt-3">َAbout Me</h4>
+                      <p class="lh-lg fs-6 mt-3 text-secondary">
+                        Hi, im Reihane Jafaie , I love programming and designing . so I learning website development.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                  <div class="card-item">
+                      <div class="icon">
+                         
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                           <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
+                         </svg>
+                      </div>
+                      <h4 class="h4 mt-3">
+                        Why?
+                      </h4>
+                      <p class="lh-lg fs-6 mt-3 text-secondary">
+                        This site is for classifying my university projects and portfolios that I upload little by little
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+      
+      <!--projects-->
+      <article class="  container mt-5 pb-5 row ">
+         <div class="h1 my-5 Vmx-auto text-warning w-100 ">𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈...</div>
+
+         <div class=" col-lg-4 col-md-12 ">
+            <a target="_blank" href="../html/matrix.html"
+              class=" weblog  asidepost d-flex justify-content-center  flex-column align-items-center">
+              <div class=" card  shadow mb-5 ">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class=""
+                    src="../img/matrix.png" alt="">
+                  <div class=" text-warning date d-flex flex-column align-items-center justify-content-center"> <span
+                      class="day">23</span> <span class="month">12</span> <span class="year">1401</span>
+                  </div>
+                </div>
+                <div class="contentt p-2">
+                  <p class="h6 titleposts mt-2">Matrix</p>
+                  <p class="text-light lh-base mt-3">
+                     Multiplication of two matrices and its transduction
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                    <div class="d-flex align-items-center justify-content-around   w-100">
+                      <p  class="admin text-light">RARA</p>
+                      <button type="button" class="btn btn-outline-warning btn-sm">Let's Go</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </a>
+         </div>
+
+         <div class=" col-lg-4 col-md-12 ">
+            <a href="#"
+              class=" weblog  asidepost d-flex justify-content-center  flex-column align-items-center">
+              <div class=" card  shadow mb-5 ">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class=""
+                    src="../img/—Pngtree—marketing concept in 3d isometric_7601751.png" alt="">
+                  
+                </div>
+                <div class="contentt p-2">
+                  <p class="h6 titleposts mt-2">Demo</p>
+                  <p class="text-light lh-base mt-3">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                    <div class="d-flex align-items-center justify-content-around   w-100">
+                      <p class="admin text-light">RARA</p>
+                      
+                      <button type="button" class="btn btn-outline-warning btn-sm">Let's Go</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+         </div>
+
+         <div class=" col-lg-4 col-md-4 col-sm-10 ">
+            <a href="#"
+              class=" weblog  asidepost d-flex justify-content-center  flex-column align-items-center">
+              <div class=" card  shadow mb-5 ">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class=""
+                    src="../img/—Pngtree—marketing concept in 3d isometric_7601751.png" alt="">
+                  
+                </div>
+                <div class="contentt p-2">
+                  <p class="h6 titleposts mt-2">Demo</p>
+                  <p class="text-light lh-base mt-3">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                    <div class="d-flex align-items-center justify-content-around   w-100">
+                      <p class="admin text-light">RARA</p>
+                      
+                      <button type="button" class="btn btn-outline-warning btn-sm">Let's Go</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            
+         </div>
+         
+
+      </article>
+
+      <article>
+         <div class="h1 mt-5 mx-auto text-warning w-100 ">
+            
+         </div>
+      </article>
+
+
+      <!-- contact -->
+      <div class="p-5  mt-5 container-fluid contact d-flex align-items-center">
+         <div class="container mt-5">
+            <div class="row ">
+               <div class="col p-2 text-center">
+                     <h2 class="h2 text-dark">Need more information?</h2>
+                     <a href="reihaneJafaie@gmail.com" class="mt-2 text-decoration-none  fs-4">reihaneJafaie@gmail.com</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <button type="button" class="btn  btn-floating btn-lg" id="btn-back-to-top">
+         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+          </svg>
+       </button>
+
+   </section>
+
+
+   <footer class="a2 mt-1">
+      <div class="container my-5">
+
+         <div class="row d-flex justify-content-between">
+
+            
+            <img class="rounded-circle cartCircle col-lg-4 col-md-12 col-sm-12" alt="avatar1" src="../img/photo_2023-02-18_19-56-21.jpg" />
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+               <h4 class="h4 text-warning">Quick Link</h4>
+               <ul class="">
+                  <li class="mt-3">
+                     <a href="index.html" class="text-decoration-none text-light">Home</a>
+                  </li>
+                  <li class="mt-3">
+                     <a href="#" class="text-decoration-none text-light">About Me</a>
+                  </li>
+                  <li class="mt-3">
+                     <a href="#" class="text-decoration-none text-light">Projects</a>
+                  </li>
+                  <li class="mt-3">
+                     <a href="#" class="text-decoration-none text-light">Contact</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+               <div>
+               <h4 class="h4  text-warning">Address</h4>
+                     <p><a class="text-light fs-5" href="#">reihaneJafaie@gmail.com</a>
+                     </p>
+               </div>
+               <div class="  mt-3">
+                  <a class="text-decoration-none" href="https://github.com/reihaneJafaie " target="_blank" id="github">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="text-light mx-3 bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                     </svg>
+                  </a>
+
+                  <a class="text-decoration-none" href="#" id="lang">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" target="_blank" class="text-light mx-3 bi bi-translate" viewBox="0 0 16 16">
+                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                     </svg>
+                  </a>
+
+                  <a class="text-decoration-none" onclick="shareHandler()" href="#" id="share">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" target="_blank" class="text-light mx-3 bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                     </svg>
+                  </a>
+                  
+               </div>
+            </div>
+            
+         </div>
+
+
+         <div class=" mt-5 fs-5 d-flex justify-content-center">
+            <div class="copyright text-warning">
+               <p>Developed and maintained by <a href="#" class="text-light" target="_blank">RaRa</a></p>
+            </div>
+         </div>
+
+      </div>
+
+    </footer>
+
+    <script>
+      
+    </script>
+
+   <script src="../script/script2.js" ></script>
+   <script src="../script/bootstrap.bundle.js"></script>
+</body>
+</html>
